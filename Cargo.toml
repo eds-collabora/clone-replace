@@ -1,0 +1,14 @@
+[package]
+name = "clone-replace"
+version = "0.1.0"
+authors = ["Ed Smith <ed.smith@collabora.com>"]
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Share mutable data by cloning and replacing a reference version"
+repository = "https://github.com/eds-collabora/clone-replace-rs"
+keywords = ["concurrency", "sync", "non-blocking", "synchronization"]
+categories = ["concurrency"]
+readme = "README.md"
+
+[dependencies]
+arc-swap = "1"
