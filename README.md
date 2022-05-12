@@ -1,7 +1,9 @@
 # clone-replace - share data by copying a reference
 
-[CloneReplace] provides an evolving reference version of some
-data. When the data is accessed, you are returned an [Arc] handle to a
+[CloneReplace](https://docs.rs/clone-replace/latest/clone_replace/struct.CloneReplace.html)
+provides an evolving reference version of some data. When the data is
+accessed, you are returned an
+[Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html) handle to a
 snapshot of the reference as it existed at that moment. When you wish
 to mutate your data, a full copy is made of it, which you can update
 independently, without blocking any readers. Upon completing your
